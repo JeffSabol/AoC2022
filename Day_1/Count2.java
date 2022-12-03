@@ -9,7 +9,7 @@ public class Count2 {
             Scanner s = new Scanner(input);
             int tempCal = 0;
             String token;
-            LinkedList<Integer> ll = new LinkedList();  
+            LinkedList<Integer> ll = new LinkedList<Integer>();  
 
             while (s.hasNext()) {
                 token = s.nextLine();
@@ -25,15 +25,10 @@ public class Count2 {
             
             Collections.sort(ll,null);
             int llSize = ll.size();
-            System.out.println("Top 3 elves:");
-            System.out.println(ll.get(llSize-1));
-            System.out.println(ll.get(llSize-2));
-            System.out.println(ll.get(llSize-3));
+            System.out.println("Top 3 elves: " + ll.get(llSize-1) + " "+ ll.get(llSize-2) +" "+ ll.get(llSize-3));
             int total = ll.get(llSize-3)+ll.get(llSize-2)+ll.get(llSize-1);
             System.out.println("Total of top 3 elves: "+ total);
 
-            // System.out.println("Most total calories an elf is carrying " + maxCal);
-            
             s.close();
         } catch (FileNotFoundException e) {
             System.out.println("Error reading file!");
