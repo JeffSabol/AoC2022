@@ -19,10 +19,6 @@ public class Marker2 {
                 for(int j = 0; j < 14; j++){
                     tester += token.charAt(i+j);
                 }
-                // tester += token.charAt(i);
-                // tester += token.charAt(i + 1);
-                // tester += token.charAt(i + 2);
-                // tester += token.charAt(i + 3);
                 if (isUnique(tester)) {
                     count = i + 14;
                     break;
